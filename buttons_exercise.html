@@ -8,6 +8,15 @@
     <style>
         a{
             color: rgb(19, 104, 165);
+            transition: color 0.15s;
+        }
+
+        a:hover{
+            color: purple;
+        }
+
+        a:active{
+            color: rgb(138, 80, 138);
         }
 
         .stock{
@@ -22,6 +31,16 @@
             border-radius: 25px;
             margin-right: 10px;
             cursor: pointer;
+            transition: background-color 0.15s,
+                opacity 0.15s;
+        }
+
+        .cart-button:hover{
+            background-color: rgb(219, 183, 8)
+        }
+
+        .cart-button:active{
+            opacity: 0.5;
         }
 
         .buy-button{
@@ -31,6 +50,16 @@
             width: 145px;
             border-radius: 25px;
             cursor: pointer;
+            transition: background-color 0.15s, 
+                opacity 0.15s;
+        }
+
+        .buy-button:hover{
+            background-color: rgb(201, 130, 22)
+        }
+
+        .buy-button:active{
+            opacity: 0.5;
         }
 
     </style>
