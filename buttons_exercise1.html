@@ -1,41 +1,45 @@
+
 <style>
-    .pagination {
+    .pagination{
         display: flex;
         align-items: center;
         gap: 5px;
     }
 
-    .back-button,
-    .next-button {
-        padding: 8px 12px;
+    .back-button, .next-button{
+        padding: 6px 8px;
         cursor: pointer;
+        transition: opacity 0.15s;
     }
 
-    a.page-number {
-        padding: 6px 10px;
-        text-decoration: none;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        color: #000;
+    .back-button:hover, .next-button:hover{
+        opacity: 0.3;
+
     }
 
-    a.page-number:hover {
-        background-color: #f0f0f0;
+    .page-number{
+        padding: 6px 6px;
+        color: rgb(28, 132, 224);
+        transition: color 0.15s;
     }
 
-    a.active {
-        background-color: #007bff;
-        color: #fff;
-        border-color: #007bff;
+    a:hover{
+        color: violet;
     }
+
+    a:active{
+        color: rgb(200, 6, 6);
+    }
+
 </style>
+
 
 <div class="pagination">
     <button class="back-button">Back</button>
-    <a href="#" class="page-number num1 active">1</a>
-    <a href="#" class="page-number num2">2</a>
-    <a href="#" class="page-number num3">3</a>
-    <a href="#" class="page-number num4">4</a>
-    <a href="#" class="page-number num5">5</a>
+    <a href="#" class="page-number">1</a>
+    <a  href="#" class="page-number">2</a>
+    <a  href="#" class="page-number">3</a>
+    <a href="#" class="page-number">4</a>
+    <a href="#" class="page-number">5</a>
     <button class="next-button">Next</button>
 </div>
