@@ -1,24 +1,22 @@
 <style>
-    .stretch-button {
+    .shadow-button{
         background-color: green;
-        border: none;
         color: white;
-        padding: 10px 15px;
+        border: none;
+        padding: 8px 16px;
         font-weight: bold;
-        transition: all 0.2s ease;
         cursor: pointer;
-        box-shadow: 0 5px #0b5e00;
-        border-radius: 5px;
+        box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3); 
+        transition: box-shadow 0.30s;
+
     }
 
-    .stretch-button:hover {
-        padding: 20px 40px;
-    }
-
-    .stretch-button:active {
-        box-shadow: 0 2px #0b5e00;
-        transform: translateY(3px);
-    }
+    .shadow-button:active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    top: 2px;
+    left: 2px;
+    }   
 </style>
 
-<button class="stretch-button">Stretch</button>
+
+<button class="shadow-button">Shadow</button>
